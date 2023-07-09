@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notInService">
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/background"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:src="@drawable/dots"
+           android:scaleType="fitXY"
+           >
+
+       </ImageView>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="0px"
+               android:textColor="@android:color/background_light"
+                android:textSize="22sp"
+               android:gravity="center"
+               android:text="Cleaning Service \nWill Resume Tomorrow
+"
+               android:layout_weight="1"></TextView>
+           <ImageView
+               android:id="@+id/ns_img"
+               android:layout_width="match_parent"
+               android:layout_height="0px"
+               android:src="@drawable/image22"
+               android:layout_weight="2"
+               >
+
+           </ImageView>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0px"
+               android:layout_weight="1"
+               android:orientation="horizontal"
+               >
+               <ImageView
+                   android:id="@+id/complogo"
+                   android:layout_width="0px"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/image8"
+                   android:scaleType="fitCenter"
+                   android:layout_weight="1"/>
+
+               <TextView
+                   android:layout_width="0px"
+                   android:layout_height="match_parent"
+                   android:text=""
+                   android:textSize="10sp"
+                   android:textColor="@android:color/background_dark"
+                   android:gravity="bottom|end"
+                   android:layout_weight="3"/>
+               <TextView
+                   android:id="@+id/unabiz"
+                   android:layout_width="0px"
+                   android:layout_height="match_parent"
+                   android:text="© UnaBiz Pte Ltd, 2019."
+                   android:textSize="10sp"
+                   android:textColor="@android:color/background_light"
+                   android:gravity="center"
+                   android:layout_weight="3"/>
+           </LinearLayout>
+       </LinearLayout>
+   </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SmileActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/background"></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/clientLogo"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:scaleType="fitEnd"
+                android:src="@drawable/image7"
+
+                android:layout_weight="1"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:text="Please rate our toilet"
+                android:textSize="24sp"
+                android:textColor="@android:color/background_dark"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="2"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:orientation="horizontal"
+                android:layout_weight="5"
+                android:gravity="center">
+                <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                >
+                <com.test.myapplication.MyView
+                    android:id="@+id/excellent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                     >
+                    <ImageView
+                        android:id="@+id/icon1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_gravity="center"
+
+                        android:scaleType="fitStart"
+                        android:layout_weight="4"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:text="Excellent"
+                        android:textColor="@android:color/background_dark"
+                        android:layout_weight="1"
+                        android:textSize="18dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="top|center">
+
+                    </TextView>
+                </LinearLayout>
+
+            </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+                    <com.test.myapplication.MyView
+                        android:id="@+id/very_good"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:id="@+id/icon2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:layout_gravity="center"
+                            android:scaleType="fitStart"
+                            android:layout_weight="4"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:text="Very Good"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:textColor="@android:color/background_dark"
+                            android:paddingBottom="5dp"
+                            android:gravity="top|center">
+
+                        </TextView>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+                    <com.test.myapplication.MyView
+                        android:id="@+id/good"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:id="@+id/icon3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:layout_gravity="center"
+                            android:scaleType="fitStart"
+                            android:layout_weight="4"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:text="Good"
+                            android:textColor="@android:color/background_dark"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:paddingBottom="5dp"
+                            android:gravity="top|center">
+
+                        </TextView>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    >
+                    <com.test.myapplication.MyView
+                        android:id="@+id/poor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:id="@+id/icon4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:layout_gravity="center"
+                            android:scaleType="fitStart"
+                            android:layout_weight="4"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:text="Poor"
+                            android:textColor="@android:color/background_dark"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:paddingBottom="5dp"
+                            android:gravity="top|center">
+
+                        </TextView>
+                    </LinearLayout>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+                    <com.test.myapplication.MyView
+                        android:id="@+id/very_poor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:id="@+id/icon5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:layout_gravity="center"
+                            android:scaleType="fitStart"
+                            android:layout_weight="4"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0px"
+                            android:text="Very Poor"
+                            android:textColor="@android:color/background_dark"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:paddingBottom="5dp"
+                            android:gravity="top|center">
+
+                        </TextView>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/sendrequest"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:src="@drawable/image8"
+
+                android:layout_weight="2">
+
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/complogo"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image8"
+                    android:scaleType="fitEnd"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:text="This screen is sanitised regularly"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/background_dark"
+                    android:gravity="bottom|end"
+                    android:layout_weight="3"/>
+                <TextView
+                    android:id="@+id/unabiz"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:text="© UnaBiz Pte Ltd, 2019."
+                    android:textSize="10sp"
+                    android:textColor="@android:color/background_dark"
+                    android:gravity="bottom|end"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>
