@@ -1,5 +1,5 @@
 # rateCleanlines
-Tablet( Android) app for rating cleanliness of a toilet
+White Label, Tablet( Android) app, for rating cleanliness of a toilet
 
 ![image_large1](https://github.com/hmachine83/rateCleanlines/assets/12422024/f53667d4-bdd2-4ffb-86a8-16c388d70efc)
 
